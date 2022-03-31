@@ -1,24 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Button } from "./components/Button";
+import { Header } from "./components/Header";
+
+import styles from "./styles/App.module.css";
+
+import { useNavigate } from "react-router-dom";
 
 function App() {
+  const navigate = useNavigate();
+
+  const routeChange = (path: string) => {
+    navigate(path);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+
+      <section>
+        <main className={styles.main}>
+          <div className={styles.info}>
+            <span>
+              <h1>Será que você conhece bem seu par?</h1>
+              <p>Inicie o quiz e vamos descobrir!</p>
+            </span>
+
+            <Button
+              bg="#da4453"
+              color="white"
+              onClick={() => routeChange("questions")}
+            >
+              Iniciar
+            </Button>
+          </div>
+          <img width={800} src="/question.svg" alt="Question" />
+        </main>
+      </section>
     </div>
   );
 }

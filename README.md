@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+# Love Quiz
+
+Estava na intenção de fazer um pedido de casamento diferente para minha namorada, então resolvi fazer um quiz fake, onde ao fim das perguntas, é feito o grande pedido.
+
+A aplicação é bem simples, mas cumpre o seu objetivo.
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

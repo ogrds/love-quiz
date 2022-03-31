@@ -1,0 +1,18 @@
+.button {
+    margin-top: 2rem;
+
+    border: 0;
+    transition: filter 0.2s ease-in-out;
+    padding: .8rem 2rem;
+    font-size: 1rem;
+}
+
+.button:hover {
+    filter: opacity(80%);
+    cursor: pointer;
+}
+
+.button:disabled {
+    opacity: 50%;
+    cursor: not-allowed;
+}

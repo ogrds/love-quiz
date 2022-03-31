@@ -1,0 +1,93 @@
+.header {
+    max-width: 1280px;
+    padding: 0 5rem;
+    margin: 0 auto;
+
+    background-color: #ffce54;
+
+    display: flex;
+    align-items: center;
+}
+
+.header>.questionNumber {
+    padding: 2rem
+}
+
+.header>.questionNumber>div {
+    font-size: 1.5em;
+    background-color: #da4453;
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #fff;
+}
+
+.header>.question {
+    padding: 2rem
+}
+
+.header>.question>h6 {
+    font-weight: 400;
+    color: #b0acac;
+}
+
+
+.main {
+    max-width: 1280px;
+    padding: 0 5rem;
+    margin: 0 auto;
+}
+
+.main>section {
+    padding: 0 5rem;
+    margin: 0 auto;
+}
+
+.main>section>button {
+    background-color: #f0f0f0;
+    border: 0;
+    display: block;
+    width: 100%;
+    margin: 1rem;
+    padding: 1rem 2rem;
+
+    cursor: pointer;
+
+    transition: filter 0.2s ease-in-out;
+
+    text-align: left;
+}
+
+.main>section>button>span {
+    font-size: 1.2rem;
+}
+
+
+.main>section>button>span:first-child {
+    background: #ffce54;
+    font-weight: 700;
+    padding: 5px;
+}
+
+.finish {
+    max-width: 1280px;
+    padding: 0 5rem;
+    margin: 0 auto;
+}
+
+.finish>button {
+    margin-top: 1rem;
+    border: 0;
+    background: transparent;
+    color: #da4453;
+    cursor: pointer;
+}
+
+.finish>button:hover {
+    text-decoration: underline;
+}

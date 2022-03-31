@@ -1,0 +1,22 @@
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+
+.container>div {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.container>div>img {
+    margin-right: 1rem;
+}
+
+.container>div>span {
+    color: #da4453;
+    font-weight: 700;
+    font-size: 1.5rem
+}

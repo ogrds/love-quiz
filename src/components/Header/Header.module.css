@@ -20,3 +20,13 @@
     font-weight: 700;
     font-size: 1.5rem
 }
+
+@media (max-width: 600px) {
+    .container>div {
+        justify-content: center;
+    }
+
+    .container>div>span {
+        font-size: 1.2rem
+    }
+}

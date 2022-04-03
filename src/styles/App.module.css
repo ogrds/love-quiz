@@ -16,3 +16,13 @@
 .info>span>h1+p {
     margin-top: 1rem
 }
+
+@media (max-width: 600px) {
+    .main {
+        padding: 0 2rem;
+    }
+
+    .main>img {
+        display: none;
+    }
+}

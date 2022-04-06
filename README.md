@@ -9,4 +9,4 @@ A aplicação é bem simples, mas cumpre o seu objetivo.
 
 Dentro da pasta `src` contém um arquivo `db.js`. Nele estão contidas as perguntas do quiz e o texto final do pedido.
 
-# Se quiser usar, fique a vontade, desejo toda sorte do mundo!!
+## *Se quiser usar, fique a vontade, desejo toda sorte do mundo!!*

@@ -8,6 +8,20 @@
     margin-bottom: 1rem;
 }
 
+.button {
+    border: 0;
+    color: #da4453;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    text-underline-offset: 2px;
+}
+
 @media (max-width: 600px) {
     .container {
         padding: 0 2rem;

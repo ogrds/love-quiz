@@ -3,10 +3,12 @@ import Skeleton from "react-loading-skeleton";
 import styles from "./Pedido.module.css";
 
 import "react-loading-skeleton/dist/skeleton.css";
-import { contentPedido } from "../../db";
+import { contentPedido, finalPedido } from "../../db";
 
 export function Pedido() {
   const [show, setShow] = useState(false);
+
+  const [showMore, setShowMore] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
@@ -41,31 +43,31 @@ export function Pedido() {
           <p>
             <Skeleton count={2} />
           </p>
-
-          <p>
-            <Skeleton count={5} />
-          </p>
-
-          <h3>
-            <Skeleton />
-          </h3>
         </section>
       ) : (
         <section className={styles.container}>
-          {contentPedido.map(pedido => {
-            return createElement(
-              pedido.tag,
-              {},
-              pedido.content
-            )
+          {contentPedido.map((pedido) => {
+            return createElement(pedido.tag, {}, pedido.content);
           })}
 
-          <input
-            type="text"
-            style={{
-              padding: ".5rem",
-            }}
-          />
+          {showMore ? (
+            <>
+              {finalPedido.map((pedido) => {
+                return createElement(pedido.tag, {}, pedido.content);
+              })}
+
+              <input
+                type="text"
+                style={{
+                  padding: ".5rem",
+                }}
+              />
+            </>
+          ) : (
+            <button onClick={() => setShowMore(true)} className={styles.button}>
+              Clique aqui para ver mais...
+            </button>
+          )}
         </section>
       )}
     </>
